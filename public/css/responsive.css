@@ -1,0 +1,102 @@
+@media(max-width: 900px){
+    #page-home{
+        background-position: 70vh;
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    #page-home main{
+        align-items: center;
+    }
+    #page-home main a strong{
+        margin-left: 0;
+    }
+    #cadastro form .field-group{
+        flex-direction: column;
+    }
+    #cadastro form .field-group .field+.field{
+        margin: 0 0 8px 0;
+    }
+    #resultado main{
+        margin: 9px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #resultado .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    #resultado .cards .card{
+        width: 248px;
+    }
+    #resultado .cards .card h3{
+        font-size: 19px;
+        line-height: 28.6px;
+    }
+}
+@media(max-width: 550px){
+    #resultado main h4{
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    #resultado header,
+    #cadastro header{
+        flex-direction: column;
+    }
+    #resultado header img,
+    #cadastro header img{
+        margin-bottom: 15px;
+    }
+    #resultado header a,
+    #cadastro header a{
+        margin-left: 45%;
+    }
+    #page-home main h1{
+        font-size: 40px;
+    }
+    #cadastro form fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    #cadastro form fieldset .items-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #cadastro h1{
+        font-size: 27px;
+        text-align: center;
+    }
+    #resultado main{
+        margin: 9px;
+    }
+    #resultado .cards{
+        grid-template-columns: 1fr;
+    }
+    #resultado .cards .card{
+        border-bottom: 1px solid #34cb79;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .modal .content {
+       width: 330px;
+    }
+}
+
+@media(min-width: 1700px){
+    #page-home{
+        background-position: 40vh;
+    }
+}
+@media(max-height: 760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+}

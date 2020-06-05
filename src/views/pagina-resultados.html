@@ -1,0 +1,50 @@
+{%extends "layout.html"%}}
+
+{% set pageId = "resultado" %}
+
+{% block title %}
+    <title>Ecoleta - Crie seu ponto de coleta</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="./css/resultado.css">
+{% endblock styles %}
+
+{% block content %}
+
+    {%include "partes/page-header.html"%}
+
+    <main>
+    {% if total > 0 %}
+        <h4>
+            <strong>{{total}} pontos</strong>
+            encontrados </h4>
+<div class="cards">
+
+        {% for local in locais %}
+        
+            <div class="card">
+                <img src="{{local.image}}" alt="{{local.nome}}">
+                <h1>{{local.nome}}</h1>
+                <h3>{{local.items}}</h3>
+                <p>
+                    {{local.cidade}}, {{local.estado}}
+                    <br>
+                   {{local.endereco }}
+                    <br>
+                   {{local.endereco2}}
+                </p>
+            </div>
+            
+        {% endfor %}
+        </div>
+        {%else%}
+        <h4>
+            <strong> 0 pontos</strong>
+            encontrados </h4>
+        {% endif %}
+           
+        
+    
+    </main>
+{% endblock content %}
